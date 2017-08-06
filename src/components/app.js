@@ -14,12 +14,12 @@ const ListItem = require('./ListItem');
 const styles = require('../styles');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBdH0N41sX9BQCmNgGZ7SNIJ0fT-_JAsPE",
-  authDomain: "groceryapp-f1bd1.firebaseapp.com",
-  databaseURL: "https://groceryapp-f1bd1.firebaseio.com",
-  projectId: "groceryapp-f1bd1",
-  storageBucket: "groceryapp-f1bd1.appspot.com",
-  messagingSenderId: "478757807969"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -42,8 +42,6 @@ export default class App extends Component {
 
   componentDidMount() {
     this.listenForItems(this.itemsRef);
-    //this._createUser('mayhem.beatsmith@gmail.com', 'grocery1');
-    //this._signinUser('mayhem.beatsmith@gmail.com','grocery1');
   }
 
   // componentDidUpdate(prevProps, prevState) {
